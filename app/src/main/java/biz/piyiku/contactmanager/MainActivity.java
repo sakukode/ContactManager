@@ -36,6 +36,7 @@ public class MainActivity extends Activity {
         adressTxt = (EditText) findViewById(R.id.txtEmail);
         contactListView = (ListView) findViewById(R.id.listView);
         TabHost tabHost = (TabHost) findViewById(R.id.tabHost);
+        //test commit
 
         tabHost.setup();
 
