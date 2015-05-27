@@ -51,12 +51,21 @@ public class MainActivity extends Activity {
         tabHost.addTab(tabSpec);
 
         final Button addBtn = (Button) findViewById(R.id.btnAddContact);
+        final Button deleteBtn = (Button) findViewById(R.id.btnDeleteContact);
+
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 addContact(nameTxt.getText().toString(), phoneTxt.getText().toString(), emailTxt.getText().toString(), adressTxt.getText().toString());
                 populateList();
                 Toast.makeText(getApplicationContext(), nameTxt.getText().toString() + " has been added to your Contacts", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "button delete", Toast.LENGTH_SHORT).show();
             }
         });
 

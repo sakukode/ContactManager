@@ -37,4 +37,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Position"
         android:id="@+id/position" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Contact"
+        android:id="@+id/btnDeleteContact"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>
